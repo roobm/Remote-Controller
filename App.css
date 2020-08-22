@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+input {
+  width: 20%;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+
+h1 {
+  margin-left: 1%;
+}
+
+.btn-xl {
+  padding: 100px 200px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(175, 45, 45);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: lightgrey;
+  color: #000;
+  text-align: center;
+  border-radius: 9px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
