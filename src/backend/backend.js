@@ -49,6 +49,7 @@ app.post("/postData", (req, res) => {
 });
 
 app.delete("/deleteData", (req, res) => {
+  let data = req.body;
   let db = new sqlite3.Database(DB_PATH, err => {
     if (err) {
       console.error(err.message);
